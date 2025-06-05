@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indrajit Mondal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      animation: pulse 3s infinite ease-in-out, rotate 10s linear infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .logo-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    footer {
+      color: #ccc;
+      font-size: 14px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Indrajit Mondal Logo">
+  </div>
+
+  <footer>
+    © 2023 IM Creates. All rights reserved.
+  </footer>
+
+  <!-- Background music -->
+  <audio autoplay loop hidden>
+    <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
